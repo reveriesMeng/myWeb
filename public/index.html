@@ -17,9 +17,36 @@
         overflow: hidden;
     }
 
+    body {
+        position: relative;
+    }
+
+    #my-title {
+        position: absolute;
+        left: 50%;
+        top: 7%;
+        transform: translateX(-50%);
+        font-size: 30px;
+        font-weight: 600;
+        background: -webkit-linear-gradient(45deg, #FF1493, #0000FF, #00FF00, #FFD700,	#FF4500);
+        color: transparent;
+        -webkit-background-clip: text;
+        animation: ran 10s linear infinite;
+    }
+
+    @keyframes ran {
+                from {
+                    backgroud-position: 0 0;
+                }
+                to {
+                    background-position: 2000px 0;
+                }
+    }
+
 </style>
 
 <body>
+    <div id="my-title">Welcome to 杨凯's Home</div>
     <canvas></canvas>
 
     <script>
